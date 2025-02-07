@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vicklynsdesigns</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="Vicklynsdesigns" width="300" height="300">
+        <h1>Vicklynsdesigns</h1>
+        <nav>
+            <ul>
+                <li><a onclick="showSection('home')">Home</a></li>
+                <li><a onclick="showSection('products')">Shop</a></li>
+                <li><a onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Vicklynsdesigns</h2>
+        <p>Discover the latest trends in fashion with an African touch.</p>
+    </section>
+
+    <section id="products">
+        <h2>Clothing and Materials</h2>
+        <div class="product jpg">
+            <img src="1800_2.jpg">
+            <h3>African Dress</h3>
+            <p>ksh1800.00</p>
+            
+        </div>
+        <div class="product jpg">
+            <img src="1800.jpg">
+            <h3>African Summer Coat</h3>
+            <p>ksh1800.00</p>
+            
+        </div>
+        <div class="product jpg">
+            <img src="2500.jpg">
+            <h3>African Kids Dress</h3>
+            <p>ksh2500.00</p>
+            
+        </div>
+        <div class="product jpg">
+            <img src="6500.jpg">
+            <h3>Ruraci'o Dress</h3>
+            <p>ksh6500.00</p>
+            
+        </div>
+        <div class="product jpg">
+            <img src="1800_1.jpg">
+            <h3>African Holiday Costume</h3>
+            <p>ksh1800.00</p>
+            
+        </div>
+        <div class="product jpg">
+            <img src="1500.jpg">
+            <h3>African Ladies Handbag</h3>
+            <p>ksh1500.00</p>
+            
+        </div>
+        <div class="product jpg">
+            <img src="3000.jpg">
+            <h3>African sylish dress</h3>
+            <p>ksh3000.00</p>
+            
+        </div>
+        <div class="product jpg">
+            <img src="1800.jpg">
+            <h3>African Black Dress</h3>
+            <p>ksh3000.00</p>
+            
+        </div>
+        <div class="product jpg">
+            <img src="3000_2.jpg">
+            <h3>African Tracksuit</h3>
+            <p>ksh3000.00</p>
+            
+        </div>
+        <main>
+        <section id="order-form">
+            <h2>Place Your Order</h2>
+            <form id="form" onsubmit="return sendWhatsAppMessage()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="product">Product:</label>
+                <input type="text" id="product" name="product" required>
+
+                <label for="size">Size:</label>
+                <input type="text" id="size" name="size" required>
+
+                <label for="Materials">Material:</label>
+                <input type="text" id="product" name="Materials" required>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <button type="submit">Place Order</button>
+            </form>
+        </section>
+    </main>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Phone: 0716758316</p>
+        <p>Email: vicklynsdesigns@example.com</p>
+         <iframe
+        src="https://www.google.com/maps/embed?pb=!4v1738322081530!6m8!1m7!1sIsf-0TkBm2ir4306CQ3LOg!2m2!1d-1.218831952840758!2d36.77792445704422!3f243.13667015882197!4f12.650198501205011!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Vicklynsdesigns. All rights reserved.</p>
+    </footer>
+
+     <script>
+        function sendWhatsAppMessage() {
+            const name = document.getElementById('name').value;
+            const product = document.getElementById('product').value;
+            const quantity = document.getElementById('quantity').value;
+            const phone = document.getElementById('phone').value;
+
+            // Construct the WhatsApp message
+            const message = `*New Order*\nName: ${name}\nProduct: ${product}\nQuantity: ${quantity}\nPhone: ${phone}`;
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappNumber = '+254716758316'; // Replace with the seller's WhatsApp number
+            const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+            // Redirect to WhatsApp
+            window.open(whatsappUrl, '_blank');
+            return false; // Prevent form submission
+        }
+    </script>
+</body>
+<style>
+        body {
+            background-color: purple;
+            /* background */
+            font-family: 'Monaco', sans-serif;
+        }
+
+        header {
+          background-image:url('african-seamless-pattern-picture-art-600nw-1909924021.jpg'); /* Replace with your image file */
+          background-size: cover; /* Cover the entire header */
+          background-position: center; /* Center the image */
+          padding: 20px 0; /* Add some padding */
+          color: white; /* Text color */
+          text-align: center; /* Center text */
+
+
+
+           /* background-color: purple;
+            color: white;
+            padding: 15px;
+            text-align: center;*/
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: ghostwhite;
+            text-decoration: underline overline;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #home,
+        #products,
+        #contact {
+            text-align: center;
+            padding: 20px;
+            display: none;
+        }
+
+        .product {
+            display: inline-block;
+            background: #f8d7da;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .product img {
+            width: 150px;
+            height: auto;
+            border-radius: 8px;
+        }
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5em; /* Smaller font size for mobile */
+            }
+
+            nav ul li {
+                margin: 0; /* Remove margin for mobile */
+            }
+        }
+
+        button {
+            background-color: mediumvioletred;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: pink;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #DA70D6;
+            color: white;
+        }
+    </style>
+    <script>
+        function submit(product) {
+            alert(product + " has been added to your Order!");
+        }
+        function submitReview() {
+            let review = document.getElementById("review text").value;
+            if (review) {
+                alert("Thank you for your review!");
+                document.getElementById("reviews").innerHTML += `<p>${review}</p>`;
+            }
+        }
+        function showSection(sectionId) {
+            document.getElementById("home").style.display = "none";
+            document.getElementById("products").style.display = "none";
+            document.getElementById("contact").style.display = "none";
+            document.getElementById(sectionId).style.display = "block";
+        }
+        window.onload = function () {
+            showSection("home");
+        };
+    </script>
+
+</html>
