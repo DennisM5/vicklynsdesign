@@ -1,0 +1,90 @@
+<style>
+        body {
+            background-color: purple;
+            /* background */
+            font-family: 'Monaco', sans-serif;
+        }
+
+        header {
+          background-image:url('african-seamless-pattern-picture-art-600nw-1909924021.jpg'); /* Replace with your image file */
+          background-size: cover; /* Cover the entire header */
+          background-position: center; /* Center the image */
+          padding: 20px 0; /* Add some padding */
+          color: white; /* Text color */
+          text-align: center; /* Center text */
+
+
+
+           /* background-color: purple;
+            color: white;
+            padding: 15px;
+            text-align: center;*/
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: ghostwhite;
+            text-decoration: underline overline;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #home,
+        #products,
+        #contact {
+            text-align: center;
+            padding: 20px;
+            display: none;
+        }
+
+        .product {
+            display: inline-block;
+            background: #f8d7da;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .product img {
+            width: 150px;
+            height: auto;
+            border-radius: 8px;
+        }
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5em; /* Smaller font size for mobile */
+            }
+
+            nav ul li {
+                margin: 0; /* Remove margin for mobile */
+            }
+        }
+
+        button {
+            background-color: mediumvioletred;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: pink;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #DA70D6;
+            color: white;
+        }
+    
